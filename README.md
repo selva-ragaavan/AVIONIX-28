@@ -77,16 +77,6 @@ stable — rather than relying on a fixed timer delay.
 
 ## 5. Bill of Materials (Draft — TBD)
 
-| Ref | Function | Candidate Part | Notes |
-|---|---|---|---|
-| U1 | Reverse polarity protection | P-channel MOSFET | Lower drop than a series diode |
-| D1 | TVS clamp | SMBJ58A (or similar) | Clamp above operating range, below component ratings |
-| L1/L2 | EMI filter | CM choke + DM inductor | Sized per switching frequency |
-| U2 | 5V buck regulator | TI LM5017 / LM5160 family | Wide input range (≥40V rating) |
-| U3 | 3.3V buck regulator | TBD | Stepped down from 5V rail |
-| U4 | 1.8V LDO | TBD | Low-noise, low dropout |
-| U5 | Sequencing supervisor (optional) | LTC2924 / discrete PG chaining | Or RC-delay for simple version |
-
 *(To be finalized after LTspice simulation and component selection.)*
 
 ## 6. Design & Simulation Tools
@@ -114,6 +104,8 @@ stable — rather than relying on a fixed timer delay.
 - Ripple/noise measurement on outputs
 - Thermal performance under sustained load
 
+## 9. Reference articles and resources used in this  design:
+- Analog.com Multirail_Powersupply Design : https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html
 ## 9. Disclaimer
 
 This is an educational/portfolio project. It follows MIL-STD-704 and
