@@ -105,8 +105,8 @@ stable — rather than relying on a fixed timer delay.
 - Thermal performance under sustained load
 
 ## 9. Reference articles and resources used in this  design:
-- Analog.com Multirail_Powersupply Design : - https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html  ,
-                                           -  https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part2.html
+- Analog.com Multirail_Powersupply Design part1: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html  ,
+                                   part2: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part2.html
 ## 9. Disclaimer
 
 This is an educational/portfolio project. It follows MIL-STD-704 and
