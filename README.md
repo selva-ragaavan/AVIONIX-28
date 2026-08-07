@@ -43,6 +43,13 @@ wide-input buck regulation, power sequencing, and EMI-aware layout.
 | Overvoltage transient | up to ~50V (short duration) |
 | Ripple | up to 1.5V p-p |
 
+## 4. Design specific application : 
+  Power Rail Application Map
+  Rail	Voltage	Typical Consumers	Logic Family	Function on Board
+  Rail 1	5.0V	RS-422/RS-485 transceiver, op-amp/comparator, ADC analog supply	TTL / 5V CMOS	Legacy interface signaling to other avionics units, analog sensor conditioning
+  Rail 2	3.3V	MCU (I/O + peripherals), MIL-STD-1553 or ARINC429 transceiver, external Flash/EEPROM	LVCMOS / LVTTL	Main digital logic, bus communication, non-volatile storage
+  Rail 3	1.8V	MCU core supply (if MCU uses separate core rail), or high-precision ADC/reference	LVCMOS 1.8V	Lowest-voltage, most noise-sensitive rail — core logic or precision analog reference
+
 The input protection stage is designed to survive these conditions without
 damage or latch-up, and to maintain regulation through normal operating
 excursions.
