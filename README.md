@@ -43,18 +43,20 @@ wide-input buck regulation, power sequencing, and EMI-aware layout.
 | Overvoltage transient | up to ~50V (short duration) |
 | Ripple | up to 1.5V p-p |
 
-## 4. Design specific application : 
-  Power Rail Application Map
-  Rail	Voltage	Typical Consumers	Logic Family	Function on Board
-  Rail 1	5.0V	RS-422/RS-485 transceiver, op-amp/comparator, ADC analog supply	TTL / 5V CMOS	Legacy interface signaling to other avionics units, analog sensor conditioning
-  Rail 2	3.3V	MCU (I/O + peripherals), MIL-STD-1553 or ARINC429 transceiver, external Flash/EEPROM	LVCMOS / LVTTL	Main digital logic, bus communication, non-volatile storage
-  Rail 3	1.8V	MCU core supply (if MCU uses separate core rail), or high-precision ADC/reference	LVCMOS 1.8V	Lowest-voltage, most noise-sensitive rail — core logic or precision analog reference
+## 4. Power Rail Application Map
+
+| Rail   | Voltage | Typical Consumers                                              | Logic Family     | Function on Board                                              |
+|--------|---------|------------------------------------------------------------------|-------------------|------------------------------------------------------------------|
+| Rail 1 | 5.0V    | RS-422/RS-485 transceiver, op-amp/comparator, ADC analog supply | TTL / 5V CMOS     | Legacy interface signaling to other avionics units, analog sensor conditioning |
+| Rail 2 | 3.3V    | MCU (I/O + peripherals), MIL-STD-1553/ARINC429 transceiver, Flash/EEPROM | LVCMOS / LVTTL    | Main digital logic, bus communication, non-volatile storage      |
+| Rail 3 | 1.8V    | Precision ADC reference / analog front-end (or reserved for expansion) | LVCMOS 1.8V       | Low-noise reference rail for precision analog, or provisioned future use |
+
 
 The input protection stage is designed to survive these conditions without
 damage or latch-up, and to maintain regulation through normal operating
 excursions.
 
-## 4. Architecture
+## 5. Architecture
 
 ```
 28V Bus
@@ -82,17 +84,17 @@ Each regulator's Power Good (PG) output gates the Enable pin of the next
 stage, ensuring rails come up only after the previous rail is confirmed
 stable — rather than relying on a fixed timer delay.
 
-## 5. Bill of Materials (Draft — TBD)
+## 6. Bill of Materials (Draft — TBD)
 
 *(To be finalized after LTspice simulation and component selection.)*
 
-## 6. Design & Simulation Tools
+## 7. Design & Simulation Tools
 
 - **KiCad** — schematic capture and PCB layout
 - **LTspice** — pre-layout circuit simulation, especially input transient
   response (TVS clamp behavior under simulated 50V spike)
 
-## 7. Project Status
+## 8. Project Status
 
 - [ ] Component selection finalized
 - [ ] Input protection stage simulated in LTspice
@@ -103,7 +105,7 @@ stable — rather than relying on a fixed timer delay.
 - [ ] Bring-up & test
 - [ ] Rev 2 (iteration based on test results)
 
-## 8. Testing Plan (Draft)
+## 9. Testing Plan (Draft)
 
 - Input transient survival test (simulate 50V spike, 18V sag)
 - Rail sequencing verification (oscilloscope capture of turn-on order/timing)
@@ -111,10 +113,10 @@ stable — rather than relying on a fixed timer delay.
 - Ripple/noise measurement on outputs
 - Thermal performance under sustained load
 
-## 9. Reference articles and resources used in this  design:
+## 10. Reference articles and resources used in this  design:
 - Analog.com Multirail_Powersupply Design part1: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html  ,
                                    part2: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part2.html
-## 9. Disclaimer
+## 11. Disclaimer
 
 This is an educational/portfolio project. It follows MIL-STD-704 and
 MIL-STD-461 design *principles* for learning purposes but has not undergone
