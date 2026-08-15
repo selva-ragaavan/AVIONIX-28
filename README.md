@@ -94,18 +94,8 @@ stable — rather than relying on a fixed timer delay.
 - **LTspice** — pre-layout circuit simulation, especially input transient
   response (TVS clamp behavior under simulated 50V spike)
 
-## 8. Project Status
 
-- [ ] Component selection finalized
-- [ ] Input protection stage simulated in LTspice
-- [ ] Schematic capture (KiCad)
-- [ ] PCB layout (4-layer recommended)
-- [ ] Design review / DFM check
-- [ ] Fabrication & assembly
-- [ ] Bring-up & test
-- [ ] Rev 2 (iteration based on test results)
-
-## 9. Testing Plan (Draft)
+## 8. Testing Plan (Draft)
 
 - Input transient survival test (simulate 50V spike, 18V sag)
 - Rail sequencing verification (oscilloscope capture of turn-on order/timing)
@@ -113,9 +103,10 @@ stable — rather than relying on a fixed timer delay.
 - Ripple/noise measurement on outputs
 - Thermal performance under sustained load
 
-## 10. Reference articles and resources used in this  design:
+## 9. Reference articles and resources used in this  design:
 - Analog.com Multirail_Powersupply Design part1: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html  ,
 - part2: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part2.html
+- Esd Protection: https://youtu.be/MmG_m4xVNfQ?si=btMzvDi-hvi9JBXi
 ## 11. Disclaimer
 
 This is an educational/portfolio project. It follows MIL-STD-704 and
