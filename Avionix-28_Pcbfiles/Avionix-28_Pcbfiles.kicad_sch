@@ -5,6 +5,262 @@
 	(uuid "c5efffa8-e950-4f99-a1ea-77b4665bba5b")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Avionix-28_symbols:PTPS561300DDCR"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "PTPS561300DDCR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "DDC0006A-IPC_A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tps561300"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTPS561300DDCR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DDC0006A-IPC_A DDC0006A-IPC_B DDC0006A-IPC_C DDC0006A-MFG"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PTPS561300DDCR_0_1"
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 5.08 -25.4)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -25.4) (xy 30.48 -25.4)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 30.48 5.08) (xy 5.08 5.08)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 30.48 -25.4) (xy 30.48 5.08)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 35.56 -22.86 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 35.56 -7.62 180)
+					(length 5.08)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 35.56 -17.78 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 35.56 0 180)
+					(length 5.08)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -443,7 +699,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 78.74) (xy 85.09 80.01)
+			(xy 77.47 59.69) (xy 77.47 60.96)
 		)
 		(stroke
 			(width 0)
@@ -453,7 +709,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 80.01) (xy 87.63 80.01)
+			(xy 77.47 60.96) (xy 80.01 60.96)
 		)
 		(stroke
 			(width 0)
@@ -462,8 +718,102 @@
 		(uuid "e038a8c4-b08b-43fb-a6e8-dd11dedc27f5")
 	)
 	(symbol
+		(lib_id "Avionix-28_symbols:PTPS561300DDCR")
+		(at 137.16 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13b202e2-3e71-4e64-a7c3-978e4cb8ea53")
+		(property "Reference" "U1"
+			(at 154.94 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "PTPS561300DDCR"
+			(at 154.94 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "DDC0006A-IPC_A"
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps561300"
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "1792b33b-c059-4354-b4ed-5e604c05b769")
+		)
+		(pin "2"
+			(uuid "5bf719a3-7a6c-4bad-96ce-d0b4a4f4e48b")
+		)
+		(pin "4"
+			(uuid "646f2acb-3aab-487e-ba5d-95cba6ca9413")
+		)
+		(pin "1"
+			(uuid "57d7f0a5-673c-4dba-80bd-9bfef16347ea")
+		)
+		(pin "6"
+			(uuid "70d1d44e-d4f9-4e14-a936-e45739086ebe")
+		)
+		(pin "5"
+			(uuid "d851ad57-230a-42b8-b156-93349d959f70")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 92.71 82.55 180)
+		(at 85.09 63.5 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -474,7 +824,7 @@
 		(fields_autoplaced yes)
 		(uuid "93660e93-efe6-47aa-84c3-2decffb3723f")
 		(property "Reference" "J1"
-			(at 93.98 80.0099 0)
+			(at 86.36 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -485,7 +835,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 93.98 82.5499 0)
+			(at 86.36 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -496,7 +846,7 @@
 			)
 		)
 		(property "Footprint" "Avionix_fprints:CUI_TB007-508-02BE"
-			(at 92.71 82.55 0)
+			(at 85.09 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -507,7 +857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 82.55 0)
+			(at 85.09 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -518,7 +868,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 92.71 82.55 0)
+			(at 85.09 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -545,7 +895,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 78.74 180)
+		(at 77.47 59.69 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -556,7 +906,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d152fec-a782-4eaa-bafa-1c40805c29e7")
 		(property "Reference" "#PWR01"
-			(at 85.09 72.39 0)
+			(at 77.47 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -567,7 +917,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.09 73.66 0)
+			(at 77.47 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -577,7 +927,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 78.74 0)
+			(at 77.47 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -588,7 +938,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 78.74 0)
+			(at 77.47 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -599,7 +949,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 78.74 0)
+			(at 77.47 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -623,7 +973,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 87.63 82.55 90)
+		(at 133.35 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -632,9 +982,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c3edb358-642c-4b00-a1fb-9d7eedddebbd")
-		(property "Reference" "#PWR02"
-			(at 91.44 82.55 0)
+		(uuid "b016766a-fc56-4668-b320-c46e7257f4ad")
+		(property "Reference" "#PWR03"
+			(at 133.35 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -645,18 +995,17 @@
 			)
 		)
 		(property "Value" "+28V"
-			(at 83.82 82.5499 90)
+			(at 133.35 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 82.55 0)
+			(at 133.35 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -667,7 +1016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 82.55 0)
+			(at 133.35 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -678,7 +1027,86 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 87.63 82.55 0)
+			(at 133.35 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45211184-cdcf-4d8e-a857-ca969995951f")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 80.01 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3edb358-642c-4b00-a1fb-9d7eedddebbd")
+		(property "Reference" "#PWR02"
+			(at 83.82 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+28V"
+			(at 76.2 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 80.01 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
