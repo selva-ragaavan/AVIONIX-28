@@ -72,8 +72,8 @@ EMI Input Filter (CM choke + DM inductor + bulk/ceramic caps)
   │
   ▼
 ┌─────────────┐     PG      ┌─────────────┐     PG      ┌─────────────┐
-│  5V Buck    │────────────▶│  3.3V Buck  │────────────▶│  1.8V LDO   │
-│  Converter  │   enables   │  Converter  │   enables   │             │
+│  5V Buck    │────────────▶│  3.3V Ldo  │────────────▶│  1.8V LDO   │
+│  Converter  │   enables   │    │        │             │
 └─────────────┘             └─────────────┘             └─────────────┘
      │                            │                            │
      ▼                            ▼                            ▼
@@ -95,6 +95,7 @@ stable — rather than relying on a fixed timer delay.
 - Analog.com Multirail_Powersupply Design part1: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html  ,
 - part2: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part2.html
 - Esd Protection: https://youtu.be/MmG_m4xVNfQ?si=btMzvDi-hvi9JBXi
+- buck ic calculations : https://www.ti.com/lit/an/slva477b/slva477b.pdf?ts=1787028919406&ref_url=https%253A%252F%252Fwww.google.com%252F
 ## 8. Disclaimer
 
 This is an educational/portfolio project. It follows MIL-STD-704 and
