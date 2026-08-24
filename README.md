@@ -84,19 +84,12 @@ Each regulator's Power Good (PG) output gates the Enable pin of the next
 stage, ensuring rails come up only after the previous rail is confirmed
 stable — rather than relying on a fixed timer delay.
 
-## 6. Bill of Materials (Draft — TBD)
-
-*(To be finalized after LTspice simulation and component selection.)*
-
-
-
-
-## 7. Reference articles and resources used in this  design:
+## 6. Reference articles and resources used in this  design:
 - Analog.com Multirail_Powersupply Design part1: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html  ,
 - part2: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part2.html
 - Esd Protection: https://youtu.be/MmG_m4xVNfQ?si=btMzvDi-hvi9JBXi
 - buck ic calculations : https://www.ti.com/lit/an/slva477b/slva477b.pdf?ts=1787028919406&ref_url=https%253A%252F%252Fwww.google.com%252F
-## 8. Disclaimer
+## 7. Disclaimer
 
 This is an educational/portfolio project. It follows MIL-STD-704 and
 MIL-STD-461 design *principles* for learning purposes but has not undergone
