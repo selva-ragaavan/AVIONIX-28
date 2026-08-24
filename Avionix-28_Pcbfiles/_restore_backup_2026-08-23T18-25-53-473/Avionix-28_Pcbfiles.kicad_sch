@@ -5,7 +5,7 @@
 	(uuid "c5efffa8-e950-4f99-a1ea-77b4665bba5b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Avionix-28_symbols:TPS54202DDCR"
+		(symbol "Avionix-28_symbols:PTPS561300DDCR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -24,7 +24,7 @@
 					)
 				)
 			)
-			(property "Value" "TPS54202DDCR"
+			(property "Value" "PTPS561300DDCR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -34,7 +34,7 @@
 					)
 				)
 			)
-			(property "Footprint" "DDC0006A_N"
+			(property "Footprint" "DDC0006A-IPC_A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -46,7 +46,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/gpn/tps54202"
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tps561300"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -79,7 +79,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "TPS54202DDCR"
+			(property "ki_keywords" "PTPS561300DDCR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -90,7 +90,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "DDC0006A_N DDC0006A_M DDC0006A_L"
+			(property "ki_fp_filters" "DDC0006A-IPC_A DDC0006A-IPC_B DDC0006A-IPC_C DDC0006A-MFG"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -101,10 +101,10 @@
 					)
 				)
 			)
-			(symbol "TPS54202DDCR_0_1"
+			(symbol "PTPS561300DDCR_0_1"
 				(polyline
 					(pts
-						(xy -12.7 15.24) (xy -12.7 -15.24)
+						(xy 5.08 5.08) (xy 5.08 -25.4)
 					)
 					(stroke
 						(width 0.2032)
@@ -116,7 +116,7 @@
 				)
 				(polyline
 					(pts
-						(xy -12.7 -15.24) (xy 12.7 -15.24)
+						(xy 5.08 -25.4) (xy 30.48 -25.4)
 					)
 					(stroke
 						(width 0.2032)
@@ -128,7 +128,7 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 15.24) (xy -12.7 15.24)
+						(xy 30.48 5.08) (xy 5.08 5.08)
 					)
 					(stroke
 						(width 0.2032)
@@ -140,7 +140,7 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -15.24) (xy 12.7 15.24)
+						(xy 30.48 -25.4) (xy 30.48 5.08)
 					)
 					(stroke
 						(width 0.2032)
@@ -151,7 +151,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -12.7 180)
+					(at 35.56 -22.86 180)
 					(length 5.08)
 					(name "GND"
 						(effects
@@ -168,8 +168,8 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 17.78 2.54 180)
+				(pin unspecified line
+					(at 35.56 -7.62 180)
 					(length 5.08)
 					(name "SW"
 						(effects
@@ -187,7 +187,7 @@
 					)
 				)
 				(pin power_in line
-					(at -17.78 10.16 0)
+					(at 0 0 0)
 					(length 5.08)
 					(name "VIN"
 						(effects
@@ -204,10 +204,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 17.78 -7.62 180)
+				(pin unspecified line
+					(at 35.56 -17.78 180)
 					(length 5.08)
-					(name "FB"
+					(name "VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -223,7 +223,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 2.54 0)
+					(at 0 -7.62 0)
 					(length 5.08)
 					(name "EN"
 						(effects
@@ -240,8 +240,8 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 17.78 10.16 180)
+				(pin unspecified line
+					(at 35.56 0 180)
 					(length 5.08)
 					(name "BOOT"
 						(effects
@@ -432,6 +432,129 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1171,292 +1294,244 @@
 		)
 	)
 	(junction
-		(at 83.82 73.66)
+		(at 172.72 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "18834094-2a5f-4f25-933f-420bdcdbc16d")
+		(uuid "02fa04fe-ff03-4430-b96e-ebb64b48cc03")
 	)
 	(junction
-		(at 154.94 73.66)
+		(at 99.06 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "19aca744-894c-40ab-aa11-084a325110da")
+		(uuid "0e9c8d9a-4a1d-4d08-bf9b-74e0df3e0c12")
 	)
 	(junction
-		(at 170.18 86.36)
+		(at 208.28 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2079351c-eba6-4595-b84a-bcf1f5d56be4")
+		(uuid "13122873-0d3a-4942-9495-2edb5112d8f3")
 	)
 	(junction
-		(at 158.75 82.55)
+		(at 118.11 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "22060683-9070-422a-9635-acd50964dd5a")
+		(uuid "17e13539-44ce-4bed-b37c-26cbf1ffcfce")
 	)
 	(junction
-		(at 92.71 66.04)
+		(at 99.06 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "28be095a-01b7-4b28-a508-35486ce1882a")
+		(uuid "5cb20fba-22af-432e-9cfd-7eb3dddebe36")
 	)
 	(junction
-		(at 138.43 95.25)
+		(at 198.12 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4079550e-8384-48f6-9614-20ad3c220e83")
+		(uuid "75da3b2f-a2a2-4e0f-83f6-a785bea06141")
 	)
 	(junction
-		(at 179.07 68.58)
+		(at 198.12 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "51030054-b87a-4c50-99e6-c30d2d8fc22e")
+		(uuid "76697c41-6385-4f0b-a8f6-d61e596f2f76")
 	)
 	(junction
-		(at 83.82 66.04)
+		(at 109.22 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6fc0d8d6-922f-4670-a710-79a15570289e")
+		(uuid "7baac982-31e7-4fc2-8e9f-1654ec8a46ca")
 	)
 	(junction
-		(at 175.26 77.47)
+		(at 187.96 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "818714ae-6554-4f5c-8bda-10dad8389066")
+		(uuid "9f74d4e8-0e32-4be1-99e1-92afe1d8b97d")
 	)
 	(junction
-		(at 175.26 86.36)
+		(at 109.22 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "90278ed2-ae9e-4924-8569-ed5df0cd07cc")
+		(uuid "a67a9593-c07a-4f60-b0f3-bdca79a6feb9")
 	)
 	(junction
-		(at 74.93 73.66)
+		(at 127 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "93da9f35-1b2d-4788-9a00-416cd9886690")
+		(uuid "a8854adf-7215-46fa-a4a6-895063de1765")
 	)
 	(junction
-		(at 162.56 73.66)
+		(at 118.11 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a5670765-9f4e-4aad-86ae-891ebb644634")
+		(uuid "bd67e293-a6df-459e-87d7-ae1095ec85c1")
 	)
 	(junction
-		(at 142.24 73.66)
+		(at 90.17 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c5593837-c934-45fd-ad47-1c38a29cdc12")
+		(uuid "c3348231-0ecd-4ce5-acfd-237493e2c180")
 	)
 	(junction
-		(at 175.26 68.58)
+		(at 208.28 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c851d904-70f2-4c98-89af-51cc9c1bd84b")
+		(uuid "da88b28d-8417-41a4-be5d-3d91d54de19c")
 	)
 	(junction
-		(at 74.93 66.04)
+		(at 208.28 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c90b596b-58cd-4c52-8ddb-8f1727b88a46")
+		(uuid "db82f7ce-d1da-41d0-aac9-391a941a32e8")
 	)
-	(no_connect
-		(at 99.06 73.66)
-		(uuid "4bb2486b-17d1-44e4-ba63-e895a6a7a276")
+	(junction
+		(at 90.17 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8912a05-98dc-4012-8958-2d624a1da542")
 	)
 	(wire
 		(pts
-			(xy 175.26 69.85) (xy 175.26 68.58)
+			(xy 90.17 64.77) (xy 99.06 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "057a8407-8da2-4ab7-b2a1-68c4dccea422")
+		(uuid "00278b2f-030e-49aa-a117-6049bef736f4")
 	)
 	(wire
 		(pts
-			(xy 134.62 86.36) (xy 170.18 86.36)
+			(xy 198.12 85.09) (xy 198.12 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0bb28909-50ec-475d-81ce-abde28122925")
+		(uuid "2b3c6e55-95bc-4075-8701-20efcaf6fe98")
 	)
 	(wire
 		(pts
-			(xy 170.18 78.74) (xy 170.18 77.47)
+			(xy 90.17 69.85) (xy 90.17 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "11c20979-730a-4a08-aa40-52fd60de8afb")
+		(uuid "31068c41-3489-499b-9d8b-d731cc314eba")
 	)
 	(wire
 		(pts
-			(xy 170.18 86.36) (xy 175.26 86.36)
+			(xy 172.72 85.09) (xy 198.12 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "12ccd4a6-5dcf-4eda-9348-62df8f7dfceb")
+		(uuid "36411180-2498-40a8-9fde-a49f3969a7ad")
 	)
 	(wire
 		(pts
-			(xy 175.26 86.36) (xy 175.26 87.63)
+			(xy 118.11 72.39) (xy 127 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14c0431c-3e10-42a2-9f3c-1647e1231e56")
+		(uuid "36afe94a-1d87-4a46-a0c9-58fade4bbe42")
 	)
 	(wire
 		(pts
-			(xy 179.07 60.96) (xy 179.07 68.58)
+			(xy 198.12 85.09) (xy 208.28 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "15359a3c-a13a-417b-8a33-269a7d48bd9f")
+		(uuid "406169c8-6a5b-46cf-a944-528e9745bf18")
 	)
 	(wire
 		(pts
-			(xy 179.07 68.58) (xy 184.15 68.58)
+			(xy 187.96 63.5) (xy 187.96 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1629431a-b082-4d20-9ff6-b2fd0d1dc134")
+		(uuid "450d85c6-d338-4a33-8a93-03153d56dab5")
 	)
 	(wire
 		(pts
-			(xy 138.43 95.25) (xy 138.43 99.06)
+			(xy 90.17 74.93) (xy 90.17 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "308c3dec-3812-400b-a81d-4a470830c45e")
+		(uuid "52fbff43-bc1e-4392-88bc-671e8ac64fc7")
 	)
 	(wire
 		(pts
-			(xy 74.93 64.77) (xy 74.93 66.04)
+			(xy 172.72 68.58) (xy 172.72 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "353a61aa-abe0-4b1c-8477-578d27ca5ce2")
+		(uuid "5669d206-9b64-41ae-a0ae-dcb211080ced")
 	)
 	(wire
 		(pts
-			(xy 154.94 73.66) (xy 162.56 73.66)
+			(xy 90.17 72.39) (xy 99.06 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "413b8fa8-8352-4b30-bd31-99e1dd318277")
+		(uuid "5fc7a6e7-e6ce-4abb-bb7e-6c025a9b6042")
 	)
 	(wire
 		(pts
-			(xy 134.62 88.9) (xy 138.43 88.9)
+			(xy 127 64.77) (xy 118.11 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4621cd72-7f90-48ca-8979-89c96c81a010")
+		(uuid "76d4fd00-bb05-4a68-bfeb-de17eede84f5")
 	)
 	(wire
 		(pts
-			(xy 138.43 88.9) (xy 138.43 95.25)
+			(xy 90.17 67.31) (xy 90.17 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4ace0f1d-74e1-4807-9238-6ce929f1ec3b")
+		(uuid "90bc64e8-b08b-476e-9576-8e8948a6e5ca")
 	)
 	(wire
 		(pts
-			(xy 74.93 66.04) (xy 83.82 66.04)
+			(xy 90.17 69.85) (xy 86.36 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f9ff779-96f3-4c93-95c9-e6034efe46e4")
+		(uuid "9241dc79-f4ea-4705-8789-a09b0bf402bc")
 	)
 	(wire
 		(pts
-			(xy 142.24 66.04) (xy 142.24 73.66)
+			(xy 172.72 68.58) (xy 187.96 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "519d2519-a47a-4c9a-9974-3b7e9104e4cf")
+		(uuid "9c978971-447c-4263-9e0f-f75626edba4f")
 	)
 	(wire
 		(pts
-			(xy 74.93 73.66) (xy 83.82 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e60678e-27cb-4fe0-bdda-ecd2b5a36750")
-	)
-	(wire
-		(pts
-			(xy 162.56 73.66) (xy 171.45 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fedcc34-0271-4824-9ad7-62a8ebb30e16")
-	)
-	(wire
-		(pts
-			(xy 83.82 73.66) (xy 92.71 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82d31705-fc38-44a1-bdfd-dd0294299f29")
-	)
-	(wire
-		(pts
-			(xy 171.45 73.66) (xy 171.45 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d141d73-8582-42ff-8d55-980e591daddf")
-	)
-	(wire
-		(pts
-			(xy 74.93 68.58) (xy 72.39 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f3714f8-db49-4314-b0b1-44608d56cb56")
-	)
-	(wire
-		(pts
-			(xy 72.39 66.04) (xy 74.93 66.04)
+			(xy 86.36 67.31) (xy 90.17 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1466,187 +1541,177 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 68.58) (xy 179.07 68.58)
+			(xy 172.72 82.55) (xy 172.72 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a15800fb-285d-4aa5-bf77-6068fdf8ee06")
+		(uuid "a7e67556-8de1-4525-b58b-c7fbf65ad67f")
 	)
 	(wire
 		(pts
-			(xy 142.24 73.66) (xy 144.78 73.66)
+			(xy 99.06 64.77) (xy 109.22 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa300fe8-08d1-4718-a863-124f6c51913b")
+		(uuid "b2caeb10-baf4-43a5-8d06-04a304968df5")
 	)
 	(wire
 		(pts
-			(xy 184.15 60.96) (xy 184.15 66.04)
+			(xy 172.72 93.98) (xy 172.72 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aacb1850-beca-4e86-a9f8-15174fe03e9e")
+		(uuid "b300122a-025f-4604-9a18-14a489f67e6a")
 	)
 	(wire
 		(pts
-			(xy 134.62 86.36) (xy 134.62 83.82)
+			(xy 172.72 93.98) (xy 172.72 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af96df64-d1fe-4454-81cf-701da96bcf08")
+		(uuid "b4ea1f17-2465-4535-9539-a5e834772d5e")
 	)
 	(wire
 		(pts
-			(xy 162.56 81.28) (xy 162.56 82.55)
+			(xy 137.16 64.77) (xy 127 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b2af0f1a-1e96-4b8e-9e32-4e59cdbbe2df")
+		(uuid "bab3876a-e516-4ca4-bbb7-85e2956e57c8")
 	)
 	(wire
 		(pts
-			(xy 142.24 73.66) (xy 134.62 73.66)
+			(xy 172.72 93.98) (xy 208.28 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b9f1ec4a-9ca4-4329-a30a-cd57953aa0c2")
+		(uuid "c0c88128-323e-498d-955b-251acdf8fc28")
 	)
 	(wire
 		(pts
-			(xy 162.56 82.55) (xy 158.75 82.55)
+			(xy 199.39 68.58) (xy 208.28 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb6c68d0-5cac-4081-ae24-23f9dc9b3376")
+		(uuid "c15c8141-25c2-420e-b8e0-b6ef05ea298d")
 	)
 	(wire
 		(pts
-			(xy 74.93 76.2) (xy 74.93 73.66)
+			(xy 208.28 85.09) (xy 208.28 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb744d59-c358-4b45-986a-48cb08148f83")
+		(uuid "c209ed95-4f93-4a30-8024-81455ee02b52")
 	)
 	(wire
 		(pts
-			(xy 74.93 73.66) (xy 74.93 68.58)
+			(xy 198.12 76.2) (xy 208.28 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb78e906-4162-4764-8df0-835de14056fb")
+		(uuid "c5fd5cff-4371-4588-b32e-405e360e5d87")
 	)
 	(wire
 		(pts
-			(xy 175.26 85.09) (xy 175.26 86.36)
+			(xy 208.28 68.58) (xy 215.9 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c70fd520-24ad-4398-a74a-855a1598d3de")
+		(uuid "cb8576bb-efaa-4e79-a196-816f3afd6cd3")
 	)
 	(wire
 		(pts
-			(xy 152.4 73.66) (xy 154.94 73.66)
+			(xy 118.11 64.77) (xy 109.22 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ccaba6b1-8f1c-4faf-bf04-fe91c73b8986")
+		(uuid "d938cca9-3f58-435e-bd82-8d00c4248d16")
 	)
 	(wire
 		(pts
-			(xy 171.45 68.58) (xy 175.26 68.58)
+			(xy 109.22 72.39) (xy 118.11 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d17ee2ca-614a-429b-844c-baf41f3b25c2")
+		(uuid "dc4b7d4e-249e-44f2-a9f1-c76c0cd9b9bf")
 	)
 	(wire
 		(pts
-			(xy 92.71 66.04) (xy 99.06 66.04)
+			(xy 208.28 85.09) (xy 208.28 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dca14ceb-6e2c-4c3c-82b9-e65d4ba5be34")
+		(uuid "e06d0c4f-a4b2-4f3c-9a18-0d8a1a2e1b1b")
 	)
 	(wire
 		(pts
-			(xy 158.75 82.55) (xy 154.94 82.55)
+			(xy 90.17 63.5) (xy 90.17 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef41bc24-1ab1-4bfc-bc7f-6f469645507f")
+		(uuid "e1de2d6c-92f1-411f-a1f4-a55778ec1801")
 	)
 	(wire
 		(pts
-			(xy 170.18 77.47) (xy 175.26 77.47)
+			(xy 172.72 63.5) (xy 172.72 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef8463c1-cba1-42db-9b99-d2b5aee65be1")
+		(uuid "e3cd6f4a-7e6c-484a-966e-069a6dc1c1c4")
 	)
 	(wire
 		(pts
-			(xy 154.94 82.55) (xy 154.94 81.28)
+			(xy 99.06 72.39) (xy 109.22 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f00899d2-f3d6-4f9b-9ff0-29f7742f846f")
+		(uuid "eb6e3a59-d170-4455-b984-2fcee08ead7c")
 	)
 	(wire
 		(pts
-			(xy 83.82 66.04) (xy 92.71 66.04)
+			(xy 187.96 68.58) (xy 191.77 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f240a63a-2aad-455b-add5-041c14801d4e")
-	)
-	(wire
-		(pts
-			(xy 138.43 95.25) (xy 175.26 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd18ee5e-7015-400b-aaf1-58f2eafdfa23")
+		(uuid "fc28d989-657f-4146-8b50-cfc424d598b6")
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 175.26 91.44 0)
+		(lib_id "Avionix-28_symbols:PTPS561300DDCR")
+		(at 137.16 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1655,324 +1720,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "01a015a8-5edf-448d-b50d-36e97c27ad84")
-		(property "Reference" "R3"
-			(at 177.8 90.1699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "13k3"
-			(at 177.8 92.7099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.482 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 175.26 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "82a7c0e2-3626-46fa-a13c-4db189e26512")
-		)
-		(pin "1"
-			(uuid "29465eed-5ad5-4886-a2f7-b3494ed133c3")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 158.75 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "02535ae1-e0de-42f9-bdce-444457f54469")
-		(property "Reference" "#PWR06"
-			(at 158.75 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.178 84.582 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a0228f12-2e3d-4c95-b753-01be8b59b41a")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 184.15 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d6e1810-4d91-406b-be3e-99206850d584")
-		(property "Reference" "#PWR04"
-			(at 184.15 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 184.15 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3eb2af16-87b8-4edd-8ad2-44c20f5dfff8")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 138.43 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f645f50-a803-449e-8f4a-71936e55350f")
-		(property "Reference" "#PWR03"
-			(at 138.43 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 138.43 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 138.43 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "481573a1-b156-4a14-a711-fbf50b0c5df0")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Avionix-28_symbols:TPS54202DDCR")
-		(at 116.84 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f83571d-c09f-4d8b-af18-7f731ceb3f8e")
+		(uuid "13b202e2-3e71-4e64-a7c3-978e4cb8ea53")
 		(property "Reference" "U1"
-			(at 116.84 55.88 0)
+			(at 154.94 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1981,8 +1731,8 @@
 				)
 			)
 		)
-		(property "Value" "TPS54202DDCR"
-			(at 116.84 58.42 0)
+		(property "Value" "PTPS561300DDCR"
+			(at 154.94 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1991,8 +1741,8 @@
 				)
 			)
 		)
-		(property "Footprint" "DDC0006A_N"
-			(at 116.84 76.2 0)
+		(property "Footprint" "DDC0006A-IPC_A"
+			(at 137.16 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2003,8 +1753,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tps54202"
-			(at 116.84 76.2 0)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps561300"
+			(at 137.16 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2016,7 +1766,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 76.2 0)
+			(at 137.16 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2026,23 +1776,23 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "504fecbe-7393-4d65-b7d0-ed4e9ec0b2ed")
-		)
-		(pin "4"
-			(uuid "56d4b4df-de78-4eed-84bb-d12ff64d7163")
+		(pin "3"
+			(uuid "1792b33b-c059-4354-b4ed-5e604c05b769")
 		)
 		(pin "2"
-			(uuid "34ce8c86-bf50-49f5-aec3-adeb6951ec99")
+			(uuid "5bf719a3-7a6c-4bad-96ce-d0b4a4f4e48b")
+		)
+		(pin "4"
+			(uuid "646f2acb-3aab-487e-ba5d-95cba6ca9413")
+		)
+		(pin "1"
+			(uuid "57d7f0a5-673c-4dba-80bd-9bfef16347ea")
 		)
 		(pin "6"
-			(uuid "61f27f88-2c05-4dcb-9d4b-3c11e5b3405c")
-		)
-		(pin "3"
-			(uuid "742f24e1-269f-495b-9816-d735f3dcedb1")
+			(uuid "70d1d44e-d4f9-4e14-a936-e45739086ebe")
 		)
 		(pin "5"
-			(uuid "ae62312d-d433-4f58-8c7a-8ccd16e20ae5")
+			(uuid "d851ad57-230a-42b8-b156-93349d959f70")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
@@ -2054,8 +1804,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 170.18 82.55 180)
+		(lib_id "Connector:TestPoint")
+		(at 198.12 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2063,31 +1813,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "576a9d96-1464-4a21-b7b5-55db47babd0c")
-		(property "Reference" "C6"
-			(at 164.846 82.296 0)
+		(uuid "172f3b55-7302-41c5-ad08-7da480733e75")
+		(property "Reference" "TP11"
+			(at 192.532 74.422 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "75p"
-			(at 164.846 84.836 0)
+		(property "Value" "TestPoint"
+			(at 200.66 74.1679 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 169.2148 78.74 0)
+			(at 203.2 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2098,7 +1849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 82.55 0)
+			(at 203.2 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2108,8 +1859,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 170.18 82.55 0)
+		(property "Description" "test point"
+			(at 198.12 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2120,23 +1871,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "0d128443-f8cf-47a2-a56c-c9682a75ecd6")
-		)
-		(pin "2"
-			(uuid "a322998f-08fc-48fc-8a4f-3d912b3b710b")
+			(uuid "94b00b29-2778-4a63-82c1-8bc43a086e5a")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
 				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "C6")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 138.43 66.04 90)
+		(lib_id "Device:L")
+		(at 195.58 68.58 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2145,9 +1893,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5d31c43a-9f58-4606-8d8d-7286467e0a89")
-		(property "Reference" "C3"
-			(at 138.43 58.42 90)
+		(uuid "22e05049-99c9-4741-a538-1af5dc7f237b")
+		(property "Reference" "L1"
+			(at 195.58 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2156,8 +1904,8 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 138.43 60.96 90)
+		(property "Value" "25u"
+			(at 195.58 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2167,7 +1915,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 65.0748 0)
+			(at 195.58 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2178,7 +1926,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 66.04 0)
+			(at 195.58 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2188,8 +1936,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 138.43 66.04 0)
+		(property "Description" "Inductor"
+			(at 195.58 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2200,10 +1948,91 @@
 			)
 		)
 		(pin "1"
-			(uuid "5fefbe00-485e-4bb9-b3dc-e05baec86428")
+			(uuid "f550f8dc-f8e6-4375-b0fa-190ba512c5de")
 		)
 		(pin "2"
-			(uuid "bffc1975-c04e-4e3a-a7df-0e31c2a13797")
+			(uuid "985dc86a-7dec-4b1f-b9f1-64afe7ceae22")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "50383aaa-0c75-41a8-b56a-e21ef626a064")
+		(property "Reference" "C3"
+			(at 121.92 67.3099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 120.904 70.612 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.0752 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 118.11 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c6062982-adef-4e60-988b-5750a60c150e")
+		)
+		(pin "2"
+			(uuid "e51fd261-1954-47b8-b783-f8f97dcfb457")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
@@ -2215,167 +2044,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 162.56 77.47 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6398bd96-670a-4e38-8dda-182de762b1bc")
-		(property "Reference" "C5"
-			(at 157.226 77.216 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22u"
-			(at 157.226 79.756 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.5948 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 162.56 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f80b68a9-9388-40a2-9901-fc8abf25e622")
-		)
-		(pin "2"
-			(uuid "710632c3-ec31-4138-830d-5d369a398e2e")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 179.07 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ce2a62e-adc0-412f-b7ec-c011b4b10e03")
-		(property "Reference" "#PWR05"
-			(at 179.07 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 179.07 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 179.07 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ebd7024-e508-4906-b0d1-5cdbaf6dbe4e")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 175.26 81.28 0)
+		(at 208.28 72.39 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2383,32 +2053,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "891d20ed-8332-4e38-ba6d-65bf630949d4")
-		(property "Reference" "R2"
-			(at 177.8 80.0099 0)
+		(uuid "64be5cc7-91d7-4c1c-8004-ec1abc95c6da")
+		(property "Reference" "R3"
+			(at 211.328 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100k"
-			(at 177.8 82.5499 0)
+			(at 206.248 72.644 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 173.482 81.28 90)
+			(at 210.058 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2419,7 +2086,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 81.28 0)
+			(at 208.28 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2430,7 +2097,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 175.26 81.28 0)
+			(at 208.28 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2441,23 +2108,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "d04f5ba1-8029-4c6b-8f1a-1dca038ea1a6")
+			(uuid "1773dd35-32c5-4fad-899a-583bfe94de8c")
 		)
 		(pin "1"
-			(uuid "74fac22b-c922-4e04-a41a-f97ddf1d2bee")
+			(uuid "7bb1a9f9-163a-4360-825f-20d5129b126b")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
 				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 67.31 66.04 0)
+		(lib_id "Device:R")
+		(at 176.53 63.5 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2465,9 +2132,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "93660e93-efe6-47aa-84c3-2decffb3723f")
-		(property "Reference" "J1"
-			(at 62.738 67.31 90)
+		(uuid "7a37f907-b257-44c1-bd6b-d5cc853e86cc")
+		(property "Reference" "R6"
+			(at 176.53 66.548 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2476,8 +2143,8 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 64.77 67.056 90)
+		(property "Value" "0"
+			(at 176.276 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2486,8 +2153,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Avionix_fprints:CUI_TB007-508-02BE"
-			(at 67.31 66.04 0)
+		(property "Footprint" ""
+			(at 176.53 65.278 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2498,7 +2165,246 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 66.04 0)
+			(at 176.53 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 176.53 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0c7c91c2-3623-410a-9587-79618f377fae")
+		)
+		(pin "1"
+			(uuid "1d5bfd4a-c233-42ab-9c1e-ffa98e29ee54")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 99.06 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8130579e-6ab9-403a-a42c-09a2cec4171b")
+		(property "Reference" "C1"
+			(at 102.87 67.3099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 102.362 70.612 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.0252 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 99.06 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "37b9000c-5634-4b15-8746-3bf7b8b4e7f1")
+		)
+		(pin "2"
+			(uuid "1b67ea1a-ec5e-484c-8588-2a017951ed6b")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 184.15 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f0c0698-6b62-4c06-b124-e41c1f37da95")
+		(property "Reference" "C6"
+			(at 184.658 57.404 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 184.658 59.436 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 62.5348 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 184.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9bb51aa5-7df8-4eed-839d-a9b0009375b3")
+		)
+		(pin "2"
+			(uuid "73123f90-3206-4ea0-b5fa-5e36b551c924")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 81.28 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "93660e93-efe6-47aa-84c3-2decffb3723f")
+		(property "Reference" "J1"
+			(at 76.708 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 78.74 68.326 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Avionix_fprints:CUI_TB007-508-02BE"
+			(at 81.28 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2509,7 +2415,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 67.31 66.04 0)
+			(at 81.28 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2536,7 +2442,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 74.93 64.77 0)
+		(at 90.17 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2547,7 +2453,7 @@
 		(fields_autoplaced yes)
 		(uuid "99c3a39c-805a-46ce-9422-3bc573d93a5b")
 		(property "Reference" "#PWR02"
-			(at 74.93 68.58 0)
+			(at 90.17 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2558,7 +2464,7 @@
 			)
 		)
 		(property "Value" "+28V"
-			(at 74.93 59.69 0)
+			(at 90.17 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2568,7 +2474,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 64.77 0)
+			(at 90.17 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2579,7 +2485,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 64.77 0)
+			(at 90.17 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2590,7 +2496,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 74.93 64.77 0)
+			(at 90.17 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2613,8 +2519,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 189.23 68.58 180)
+		(lib_id "Device:C")
+		(at 127 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2622,29 +2528,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9ca588b2-f2b5-464d-8df6-0c6e9426a736")
-		(property "Reference" "J2"
-			(at 193.802 67.31 90)
+		(fields_autoplaced yes)
+		(uuid "9d4b328b-1c37-4b61-8d1f-39364cf0632d")
+		(property "Reference" "C4"
+			(at 130.81 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 191.77 67.564 90)
+		(property "Value" "100n"
+			(at 130.81 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Avionix_fprints:CUI_TB007-508-02BE"
-			(at 189.23 68.58 0)
+		(property "Footprint" ""
+			(at 127.9652 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2655,7 +2564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 68.58 0)
+			(at 127 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2665,8 +2574,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 189.23 68.58 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 127 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2677,15 +2586,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "910c8f01-1e01-4f5b-b497-53bc88c9dbcd")
+			(uuid "bdc1f2b6-4fe7-4336-a246-495d376af86c")
 		)
 		(pin "2"
-			(uuid "cee954d2-6126-43fd-a7a8-cc82ce037c1b")
+			(uuid "8fb4fe36-bb34-4b31-bf5f-7afd7eaea684")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
 				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "J2")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -2693,7 +2602,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 76.2 0)
+		(at 90.17 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2704,7 +2613,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4056162-f296-4d3e-bfc1-2c90b89d7418")
 		(property "Reference" "#PWR01"
-			(at 74.93 82.55 0)
+			(at 90.17 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2715,7 +2624,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 81.28 0)
+			(at 90.17 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2725,7 +2634,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 76.2 0)
+			(at 90.17 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2736,7 +2645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 76.2 0)
+			(at 90.17 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2747,7 +2656,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 76.2 0)
+			(at 90.17 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2771,7 +2680,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 154.94 77.47 180)
+		(at 198.12 80.01 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2779,31 +2688,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ab288dd0-f69e-4878-9d7a-8e7ad6cb375e")
-		(property "Reference" "C4"
-			(at 149.606 77.216 0)
+		(uuid "b84991c8-2cf7-4703-806a-0037c1d1ae10")
+		(property "Reference" "C7"
+			(at 194.31 80.264 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "22u"
-			(at 149.606 79.756 0)
+		(property "Value" "75p"
+			(at 195.072 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 153.9748 73.66 0)
+			(at 197.1548 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2814,7 +2721,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 77.47 0)
+			(at 198.12 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2825,7 +2732,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 154.94 77.47 0)
+			(at 198.12 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2836,23 +2743,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "4bf41503-512e-4945-a952-d31357fc33ba")
+			(uuid "5e4c5d52-e972-4daf-9594-53587fe60615")
 		)
 		(pin "2"
-			(uuid "50cf6ef5-ed35-4fbb-8138-859b3af19479")
+			(uuid "d25749e9-8b01-41b3-9be9-772b975ee9dc")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
 				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "C4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 83.82 69.85 0)
+		(lib_id "Device:R")
+		(at 208.28 90.17 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2860,9 +2767,88 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ad30d34a-5e33-4c07-abb9-7d4661a402e6")
-		(property "Reference" "C1"
-			(at 87.376 68.326 0)
+		(uuid "ce41ae7a-eb5f-47d3-9fc1-e3e68b685897")
+		(property "Reference" "R5"
+			(at 211.328 90.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "13k3"
+			(at 206.248 90.424 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.058 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 208.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "11eaa8af-a7f2-4594-8ce1-0cf3a65ed7bd")
+		)
+		(pin "1"
+			(uuid "2880ee2a-efcf-4b24-ae2a-c4e0ccee68ff")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 109.22 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "db8664bd-1eab-4d07-ac7b-6f1552e38bda")
+		(property "Reference" "C2"
+			(at 113.03 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2873,7 +2859,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 87.122 71.628 0)
+			(at 112.268 70.612 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2884,7 +2870,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 84.7852 73.66 0)
+			(at 110.1852 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2895,7 +2881,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 69.85 0)
+			(at 109.22 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2906,7 +2892,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 83.82 69.85 0)
+			(at 109.22 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2917,92 +2903,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7ce2bf2-5f0a-4d3c-94b0-d4c13c878333")
+			(uuid "75f6267c-5705-4ed2-b270-928b1e85df44")
 		)
 		(pin "2"
-			(uuid "d03e6975-84c1-49f4-9fcc-d38d4643b251")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 92.71 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b16651b3-d5f5-495c-a71e-13360f4ba2c2")
-		(property "Reference" "C2"
-			(at 96.52 68.5799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 96.52 71.1199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.6752 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 92.71 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ab40ce08-bf84-4589-a464-52fe395da692")
-		)
-		(pin "2"
-			(uuid "d6ab5df5-432b-4184-aa2e-02c1f3ccb7d8")
+			(uuid "fe15d2fe-78ac-48c2-b1f3-89ae87fc5254")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
@@ -3014,8 +2918,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 175.26 73.66 0)
+		(lib_id "power:GND")
+		(at 172.72 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3024,9 +2928,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d7c141e2-1c60-4e9b-99d7-5bf550a2168a")
-		(property "Reference" "R1"
-			(at 177.8 72.3899 0)
+		(uuid "f83c753c-87d0-4da9-8616-74fb6bff6fe8")
+		(property "Reference" "#PWR03"
+			(at 172.72 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3034,22 +2938,20 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "49.9"
-			(at 177.8 74.9299 0)
+		(property "Value" "GND"
+			(at 172.72 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 173.482 73.66 90)
+			(at 172.72 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3060,7 +2962,83 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 73.66 0)
+			(at 172.72 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8104ad87-f26a-4d13-b0eb-e9f636e4a3ba")
+		)
+		(instances
+			(project "Avionix-28_Pcbfiles"
+				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 208.28 80.01 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f9a7e6e6-ea93-4a0b-a15b-c1a53974b7d5")
+		(property "Reference" "R4"
+			(at 211.328 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 206.248 80.264 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.058 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3071,7 +3049,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 175.26 73.66 0)
+			(at 208.28 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3082,95 +3060,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "174226b6-eacc-4101-b354-24666bf3245f")
+			(uuid "d4b7fa69-c622-4d2a-970c-42803692dd44")
 		)
 		(pin "1"
-			(uuid "6bab6149-75f7-45aa-aea1-10e191ac599a")
+			(uuid "10fdf62c-ee8b-4bdf-8fbd-8bf83020e6aa")
 		)
 		(instances
 			(project "Avionix-28_Pcbfiles"
 				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 148.59 73.66 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d9062bb1-40e2-4aa5-97cd-4d1f7e77d674")
-		(property "Reference" "L1"
-			(at 148.59 68.58 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "55u"
-			(at 148.59 71.12 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 148.59 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "db034c4e-f3ae-4e1b-ad01-8dd92d3ddb96")
-		)
-		(pin "2"
-			(uuid "430f34fa-53c9-4ca1-90f2-33eb59fdfec6")
-		)
-		(instances
-			(project "Avionix-28_Pcbfiles"
-				(path "/c5efffa8-e950-4f99-a1ea-77b4665bba5b"
-					(reference "L1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
