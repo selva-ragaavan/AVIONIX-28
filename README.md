@@ -79,7 +79,7 @@ excursions.
           │           │
           │ 1.8V rail │ PG
           ▼           ▼
-```
+
 - Sequencing stage-to-stage via the power-good pin, rather than a fixed timer, ensures each rail only comes up once the previous one has settled — giving stable, deterministic power-up behavior.
 - The staged, gated startup also helps avoid switching-noise-induced false triggering on downstream LVCMOS-family logic, following practices described in Analog Devices' multi-rail power supply design guidance (Analog Dialogue, Part 1).
 
