@@ -58,31 +58,30 @@ excursions.
 
 ## 5. Architecture
 
-```
-28V Bus
-  │
-  ▼
-Reverse Polarity Protection
-  │
-  ▼
-TVS Transient Clamp
-  │
-  ▼
-EMI Input Filter (CM choke + DM inductor + bulk/ceramic caps)
-  │
-  ▼
-┌─────────────┐     PG      ┌─────────────┐     PG      ┌─────────────┐
-│  5V Buck    │────────────▶│  3.3V Ldo  │────────────▶│  1.8V LDO   │
-│  Converter  │   enables   │    │        │             │
-└─────────────┘             └─────────────┘             └─────────────┘
-     │                            │                            │
-     ▼                            ▼                            ▼
-  5V Rail                     3.3V Rail                    1.8V Rail
-```
+     28V BUS
+                │
+                ▼
+       ┌─────────────────┐
+       │  5V BUCK STAGE   │   28V → 5V
+       └─────────────────┘
+          │           │
+          │ 5V rail   │ PG
+          ▼           ▼
+       ┌─────────────────┐
+       │   3.3V STAGE     │   5V → 3.3V
+       └─────────────────┘
+          │           │
+          │ 3.3V rail │ PG
+          ▼           ▼
+       ┌─────────────────┐
+       │   1.8V STAGE     │   3.3V → 1.8V
+       └─────────────────┘
+          │           │
+          │ 1.8V rail │ PG
+          ▼           ▼
 
-Each regulator's Power Good (PG) output gates the Enable pin of the next
-stage, ensuring rails come up only after the previous rail is confirmed
-stable — rather than relying on a fixed timer delay.
+- Sequencing stage-to-stage via the power-good pin, rather than a fixed timer, ensures each rail only comes up once the previous one has settled — giving stable, deterministic power-up behavior.
+- The staged, gated startup also helps avoid switching-noise-induced false triggering on downstream LVCMOS-family logic, following practices described in Analog Devices' multi-rail power supply design guidance (Analog Dialogue, Part 1).
 
 ## 6. Reference articles and resources used in this  design:
 - Analog.com Multirail_Powersupply Design part1: https://www.analog.com/en/resources/analog-dialogue/articles/multirail-power-supply-design-for-successful-application-boards-part1.html  ,
