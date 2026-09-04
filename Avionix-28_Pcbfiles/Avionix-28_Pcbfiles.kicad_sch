@@ -1460,7 +1460,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 77.47) (xy 172.72 76.2)
+			(xy 177.8 78.74) (xy 177.8 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1652,7 +1652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 150.622 99.06 90)
 			(hide yes)
 			(show_name no)
@@ -1779,7 +1779,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 77.47 0)
+		(at 177.8 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1790,7 +1790,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d6e1810-4d91-406b-be3e-99206850d584")
 		(property "Reference" "#PWR04"
-			(at 172.72 83.82 0)
+			(at 177.8 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1801,7 +1801,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 82.55 0)
+			(at 177.8 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1811,7 +1811,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 77.47 0)
+			(at 177.8 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1822,7 +1822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 77.47 0)
+			(at 177.8 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1833,7 +1833,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 77.47 0)
+			(at 177.8 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2042,7 +2042,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DDC0006A_N"
+		(property "Footprint" "Screw_terminal:DDC0006A_N"
 			(at 93.98 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -2137,7 +2137,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 146.3548 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2217,7 +2217,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 119.38 72.6948 0)
 			(hide yes)
 			(show_name no)
@@ -2298,7 +2298,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 138.7348 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2348,7 +2348,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 172.72 73.66 270)
+		(at 177.8 74.93 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2358,7 +2358,7 @@
 		(dnp no)
 		(uuid "7ce2a62e-adc0-412f-b7ec-c011b4b10e03")
 		(property "Reference" "#PWR05"
-			(at 168.91 73.66 0)
+			(at 173.99 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2369,7 +2369,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 173.99 71.628 90)
+			(at 179.07 72.898 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2379,7 +2379,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 73.66 0)
+			(at 177.8 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2390,7 +2390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 73.66 0)
+			(at 177.8 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2401,7 +2401,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 172.72 73.66 0)
+			(at 177.8 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2457,7 +2457,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 150.622 88.9 90)
 			(hide yes)
 			(show_name no)
@@ -2536,7 +2536,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Avionix_fprints:CUI_TB007-508-02BE"
+		(property "Footprint" "Screw_terminal:Connector_PinHeader_3.81"
 			(at 44.45 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -2664,7 +2664,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 167.64 73.66 0)
+		(at 172.72 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2674,7 +2674,7 @@
 		(dnp no)
 		(uuid "9ca588b2-f2b5-464d-8df6-0c6e9426a736")
 		(property "Reference" "J2"
-			(at 163.068 74.93 90)
+			(at 168.148 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2684,7 +2684,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 165.1 74.676 90)
+			(at 170.18 75.946 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2693,8 +2693,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Avionix_fprints:CUI_TB007-508-02BE"
-			(at 167.64 73.66 0)
+		(property "Footprint" "Screw_terminal:Connector_PinHeader_3.81"
+			(at 172.72 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2705,7 +2705,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 73.66 0)
+			(at 172.72 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2716,7 +2716,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 167.64 73.66 0)
+			(at 172.72 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2852,7 +2852,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 131.1148 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2933,7 +2933,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 61.9252 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -3015,7 +3015,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 70.8152 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -3086,7 +3086,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "49.9"
+		(property "Value" "51"
 			(at 154.94 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3097,7 +3097,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 150.622 81.28 90)
 			(hide yes)
 			(show_name no)
@@ -3167,7 +3167,7 @@
 				)
 			)
 		)
-		(property "Value" "55u"
+		(property "Value" "22uH"
 			(at 125.73 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)

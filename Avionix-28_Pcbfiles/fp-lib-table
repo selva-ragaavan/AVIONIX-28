@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Screw_terminal") (type "KiCad") (uri "${KIPRJMOD}/_restore_backup_2026-08-23T18-25-53-473/Models/FOOTPRINTS/Screw_terminal/Screw_terminal.pretty") (options "") (descr ""))
+	(lib (name "Screw_terminal") (type "KiCad") (uri "${KIPRJMOD}/_restore_backup_2026-08-23T18-25-53-473/Avionix_fprints.pretty/Screw_terminal.pretty") (options "") (descr ""))
+)
