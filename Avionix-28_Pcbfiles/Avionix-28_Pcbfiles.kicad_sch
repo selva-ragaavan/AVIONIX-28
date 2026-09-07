@@ -3177,7 +3177,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Screw_terminal:IND_CD54_SUM"
 			(at 125.73 81.28 0)
 			(hide yes)
 			(show_name no)
